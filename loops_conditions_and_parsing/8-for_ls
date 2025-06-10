@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-or file in *; do
+for file in *; do
   if [[ "$file" == *-* ]]; then
     echo "${file#*-}"
   else
