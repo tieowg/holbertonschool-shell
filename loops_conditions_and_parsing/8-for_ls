@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-for file in *; do
-  if [[ "$file" == "-' ]]; then
+or file in *; do
+  if [[ "$file" == *-* ]]; then
     echo "${file#*-}"
-  else 
+  else
     echo "$file"
   fi
 done
