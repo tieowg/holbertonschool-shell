@@ -10,5 +10,5 @@ do
     echo "$count2"
     count2=$((count2 + 1))
   done 
-  count=$((count + 1))
-done
+  count2=0
+  count=$((count + 1)) done
