@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
-# 7-highlander prosesini öldür
-pkill -f 7-highlander 
+#
+PID=$(pgrep -f 7-highlander)
+if [ -n "$PID" ]; then
+  perl -e "kill 15, $PID"
+fi
